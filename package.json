@@ -23,7 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "publish:github": "PUBLIC_URL=https://zeals-co-ltd.github.io/technical_debts/ yarn build && rm -rf docs && mv build docs && git add --all docs/ && git commit -m 'Release Github Page' && git push -u origin master"
   },
   "eslintConfig": {
     "extends": [
